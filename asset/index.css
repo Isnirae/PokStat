@@ -1,0 +1,403 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #c14040;
+    font-family     : 'Bree Serif', serif;
+}
+
+div.site {
+    min-height    : 100%;
+    position      : relative;
+    padding-bottom: 100px;
+    min-width     : 100%;
+}
+
+/* CSS Des headers */
+
+header {
+    background-color: #efe3e3;
+    border-radius   : 0.9rem;
+    height          : 2.5rem;
+    display         : flex;
+}
+
+div.nav {
+    display        : flex;
+    width          : 100%;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.titre {
+    font-size  : 2.1rem;
+    width      : 15%;
+    margin     : 0;
+    font-weight: bold;
+    text-align : center;
+}
+
+.titre a {
+    text-decoration: none;
+    color          : rgb(193, 78, 96);
+    text-shadow    : 1px 1px 2px #161515, 0 0 1em #c14040;
+}
+
+nav.nav {
+    display  : flex;
+    padding  : 0rem;
+    flex-wrap: wrap;
+    width    : 15%;
+}
+
+nav.nav ul {
+    padding        : 0;
+    display        : flex;
+    width          : 90%;
+    justify-content: space-evenly;
+    margin         : 0;
+}
+
+nav.nav li {
+    list-style : none;
+    font-size  : 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #161515, 0 0 1em #c14040;
+}
+
+nav.nav li a {
+    text-decoration: none;
+    color          : rgb(193, 78, 96);
+}
+
+/** CSS de l'index**/
+
+div.index {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+}
+
+div.indexPs {
+    width          : 100%;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-around;
+}
+
+div.indexPoke {
+    margin       : 40px;
+    position     : relative;
+    max-width    : 250px;
+    max-height   : 350px;
+    box-shadow   : 0 40px 60px -6px #161515;
+    border-radius: 8px;
+}
+
+div.indexPoke a {
+    text-decoration: none;
+}
+
+div.indexPoke img {
+    width     : 100%;
+    height    : 98%;
+    object-fit: contain;
+    display   : block;
+    position  : relative;
+}
+
+div.indexPoke div.indexImg {
+    background   : #efe3e3;
+    border-radius: 50%;
+    height       : 14rem;
+    width        : 14rem;
+    margin       : 0 auto;
+}
+
+div.indexPoke h1 {
+    text-align: center;
+    color     : #efe3e3;
+}
+
+/* CSS pokemon-liste */
+
+table.pokeliste {
+    border         : 3px solid #efe3e3;
+    border-collapse: separate;
+    width          : 80%;
+    margin         : auto;
+    margin-top     : 2rem;
+    color          : #efe3e3;
+    text-shadow    : 1px 1px 2px #161515, 0 0 1em #c14040;
+
+}
+
+table.pokeliste img {
+    width     : 6rem;
+    height    : 6rem;
+    object-fit: contain;
+    display   : block;
+    position  : relative;
+    margin    : auto;
+}
+
+table.pokeliste div.rond {
+    background-color: #efe3e3;
+    border-radius   : 50%;
+    height          : 5rem;
+    width           : 5rem;
+    margin          : 0 auto;
+    position        : relative;
+}
+
+table.pokeliste div.trait {
+    width           : 5rem;
+    height          : 0.5rem;
+    top             : 2.3rem;
+    background-color: #c14040;
+    margin          : 0 auto;
+    position        : absolute;
+    justify-content : center;
+}
+
+table.pokeliste div.rond2 {
+    width           : 1.2rem;
+    height          : 1.2rem;
+    background-color: #efe3e3;
+    border          : 0.3rem solid #c14040;
+    margin          : 0 auto;
+    border-radius   : 50%;
+    transform       : translateY(-0.6rem);
+}
+
+table.pokeliste a {
+    text-decoration: none;
+    color          : #efe3e3;
+}
+
+table.pokeliste thead {
+    background-color: #c14040;
+    border          : 1px solid #efe3e3;
+}
+
+table.pokeliste tbody {
+    background-color: #c14040;
+    border          : 1px solid #efe3e3;
+}
+
+table.pokeliste th {
+    font-family     : monospace;
+    border          : 1px dotted #efe3e3;
+    padding         : 5px;
+    background-color: #c14040;
+    width           : 25%;
+}
+
+table.pokeliste td {
+    font-family: sans-serif;
+    font-size  : 80%;
+    border     : 1px solid #efe3e3;
+    padding    : 5px;
+    text-align : center;
+}
+
+/* CSS pokemon stat*/
+
+div.pstat {
+    display       : flex;
+    flex-direction: column;
+    color         : #efe3e3;
+    margin-top    : 4rem;
+    margin-bottom : -4rem;
+    margin-left   : -1.5rem;
+    width         : 100%;
+}
+
+div.pstat div.pstatimg {
+    text-align     : center;
+    justify-content: center;
+}
+
+div.pstat div.pstatimg img {
+    width     : 14rem;
+    height    : 14rem;
+    object-fit: contain;
+    display   : block;
+    position  : relative;
+}
+
+div.pstat div.pstatimg div.img {
+    background   : #efe3e3;
+    border-radius: 50%;
+    height       : 14rem;
+    width        : 14rem;
+    margin       : 0 auto;
+}
+
+div.pstat div.pstatimg ul {
+    list-style: none;
+}
+
+div.pstat div.pstatimg h1 {
+    text-align: center;
+    color     : #efe3e3;
+}
+
+div.pstat div.pstatistique {
+    margin-top: -2rem;
+}
+
+div.pstat div.pstatistique ul {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    list-style     : none;
+    margin-right   : -1.3rem;
+    margin-left    : -1.3rem;
+    transform      : skew(-15deg);
+}
+
+div.pstat div.pstatistique li {
+
+    margin       : 0.25rem;
+    background   : #efe3e3;
+    border-radius: 50%;
+    height       : 1.6rem;
+    width        : 5rem;
+    color        : #c14040;
+}
+
+div.pstat div.pstatistique li h3 {
+    font-style : bold;
+    font-size  : 1.3rem;
+    text-align : center;
+    text-shadow: 1px 1px 2px #161515, 0 0 1em #c14040;
+    margin     : 0 auto;
+}
+
+/* CSS du pokemon-ajout */
+
+div.ajoutP {
+    margin-top     : 2rem;
+    justify-content: center;
+}
+
+div.ajoutP fieldset {
+    padding      : 1rem;
+    border       : #efe3e3 thick double;
+    border-radius: 0.3rem;
+    width        : 16rem;
+    margin-right : auto;
+    margin-left  : auto;
+}
+
+div.ajoutP legend {
+    padding     : 0rem 0.3rem;
+    font-weight : bold;
+    font-variant: small-caps;
+    color       : #efe3e3;
+}
+
+div.ajoutP label {
+    width         : 110px;
+    display       : inline-block;
+    vertical-align: top;
+    margin        : 6px;
+    color         : #efe3e3;
+}
+
+div.ajoutP input[type=number] {
+    width           : 2rem;
+    border          : #c14040 thick double;
+    border-radius   : 0.3rem;
+    background-color: #efe3e3;
+    color           : #c14040;
+
+}
+
+div.ajoutP input[type=textarea] {
+    width           : 7rem;
+    border          : #c14040 thick double;
+    border-radius   : 0.3rem;
+    background-color: #efe3e3;
+    color           : #c14040;
+
+}
+
+div.ajoutP label.image {
+    cursor          : pointer;
+    background-color: #efe3e3;
+    font-weight     : bold;
+    border          : #c14040 thick double;
+    border-radius   : 0.4rem;
+    color           : #c14040;
+    text-align      : center;
+}
+
+div.ajoutP input[type=file] {
+    display: none;
+}
+
+div.ajoutP div.erreur {
+    font-variant: small-caps;
+    color       : #b8aaaa;
+    font-size   : 0.85rem;
+}
+
+div.ajoutP input.ajoutP {
+    width           : 10rem;
+    padding         : 1rem;
+    margin-top      : 1rem;
+    background-color: #efe3e3;
+    border          : #c14040 thick double;
+    border-radius   : 0.4rem;
+    color           : #c14040;
+    font-style      : bold;
+    font-size: 0.8rem;
+}
+
+div.ajoutP div.subP {
+    text-align: center;
+}
+
+/* CSS du 404 */
+
+h1.quatre {
+    margin-top : 20rem;
+    text-align : center;
+    color      : #efe3e3;
+    text-shadow: 1px 1px 2px #161515, 0 0 1em #c14040;
+}
+
+/* CSS du Footer */
+
+footer {
+    left            : 0;
+    bottom          : 0;
+    height          : 1.2rem;
+    position        : fixed;
+    width           : 100%;
+    background-color: #c14040;
+    border          : #161515 1px dotted;
+    display         : flex;
+    justify-content : space-around;
+}
+
+footer div.footerA {
+    color         : #efe3e3;
+    letter-spacing: 1px;
+    font-size     : .9rem;
+    opacity       : .75;
+    text-align    : center;
+}
+
+footer div.footerB {
+    text-align: end;
+}
+
+footer div.footerB a {
+    text-decoration: none;
+    color          : #efe3e3;
+}
